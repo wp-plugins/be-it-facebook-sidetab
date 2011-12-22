@@ -26,7 +26,7 @@ OR you can just install it with WordPress by going to Plugins >> Add New >> and 
 
 = Is this straight forward? =
 
-Yes
+Yes!
 
 = I need help?  =
 
