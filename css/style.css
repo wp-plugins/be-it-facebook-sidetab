@@ -1,6 +1,6 @@
 #fb-fader {
 		position: absolute;
-		z-index: 999;
+		z-index: 999999;
 		left: 0;
 		top: 100px;
 		margin: 0;
