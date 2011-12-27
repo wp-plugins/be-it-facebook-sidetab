@@ -4,14 +4,16 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: facebook, slide, tabs, like box
 Requires at least: 2.7
 Tested up to: 3.3
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Be-It Facebook Like Box side tab is a sliding and floating tab on left or right screen that has multiply options for viewing. 
 
 == Description ==
 
-Be-It Facebook Like Box side tab is a sliding and floating tab on left or right screen that has multiply options for viewing. Enter your Facebook page info in settings and slide tab will appear on frontpage.
-More info is coming in next release.
+Have you been frustrated over where to put your Facebook like box … now your worries are over. 
+With Be-It Facebook Slide tab you can now choose where on left or right side you want to have your like box floated. 
+You can change hight from top and also slide in and out time. You can also change your tab image to one that fits you. 
+The plugin is build with WP jQuery. 
 
 
 == Installation ==
@@ -26,7 +28,7 @@ OR you can just install it with WordPress by going to Plugins >> Add New >> and 
 
 = Is this straight forward? =
 
-Yes!
+Yes
 
 = I need help?  =
 
@@ -38,6 +40,10 @@ Please send to support(at)be-it.se
 2. screenshot-2.png
 
 == Changelog ==
+
+= 1.0.2 =
+* Update in settings page
+* Changed description
 
 = 1.0.1 =
 * Update in z-index layer

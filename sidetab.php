@@ -2,8 +2,8 @@
 /*
 Plugin Name: Be-It Facebook SideTab
 Plugin URI: http://wordpress.org/extend/plugins/be-it-facebook-sidetab/
-Description: Be-It Facebook Like Box side tab is a sliding and floating tab on left or right screen that has multiply options for viewing. Enter your Facebook page info in settings and slide tab will appear on frontpage.
-Version: 1.0.1
+Description: Be-It Facebook Like Box side tab is a sliding and floating tab on left or right screen that has multiply options for viewing.
+Version: 1.0.2
 Author: Be-It Consulting
 Author URI: http://www.be-it.se/
 
@@ -31,7 +31,7 @@ define( 'BE_SIDETAB_DEBUG', 'false' );
 
 
 // copied from Sociable Plugin
-function qtrans_links($links, $file){ 
+function beit_sidetab_admin_links($links, $file){ 
 	//Static so we don't call plugin_basename on every plugin row.
 	static $this_plugin;
 	if (!$this_plugin) $this_plugin = plugin_basename(dirname(__FILE__).'/sidetab.php');
@@ -42,7 +42,7 @@ function qtrans_links($links, $file){
 	}
 	return $links;
 }
-add_filter('plugin_action_links', 'qtrans_links', 10, 2);
+add_filter('plugin_action_links', 'beit_sidetab_admin_links', 10, 2);
 
 
 // function to the activation plugin
