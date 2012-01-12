@@ -1,36 +1,18 @@
-#fb-fader {
-		position: absolute;
-		z-index: 999999;
-		left: 0;
-		top: 100px;
-		margin: 0;
-		padding: 0;
-}
+#be-it-sidetab {
+	z-index: 999999;
+	background: #3b62a7;
+	padding: 0 5px;
+}      
 
-	#fb-fader .clickme {
-    padding: 0;
-  	margin: 0;
-  	float:left;
-  	display:block;
-  	width: 50px;
-  	height: 200px;
-  	cursor: pointer;
-	}
-
-#fb-fader .box {
-  	width: 298px;
-  	height: 560px;
-  	background: #3b62a7;
-		display: none;
+#be-it-sidetab .side-tab-bg-box {
   	padding: 5px 5px 10px 5px;
-  	margin: 0;
-  	float:left;
 }
-    
-#fb-fader .fb-like-box {
+
+#be-it-sidetab .fb-like-box {
     background: #FFF;
     color: #000;
-		border:none; 
-		overflow:hidden;        
-}    
-
+		border: none; 
+		overflow: hidden;  
+  	width: 292px;
+  	height: 560px;	      
+} 
