@@ -10,6 +10,6 @@
 .switch input { display: none; }
 
 
-.s-input {}
+.s-input {width: 60px;}
 .m-input {}
 .b-input {width: 350px;}
