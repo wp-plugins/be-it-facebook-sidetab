@@ -34,8 +34,10 @@ function beit_sidetab_frontend_footer() {
 
   if($WPlize->get_option('fb_color_scheme')=='dark'){
  	 	$color_scheme = ' data-colorscheme="dark" ';
-  }  
-    
+ 	 	$fb_bg_color = '000';
+  }  else {
+	  $fb_bg_color = 'FFF';
+  }
 ?>
 <script type="text/javascript">
 jQuery(function(){
@@ -53,6 +55,25 @@ jQuery(function(){
      });
 });
 </script>
+
+<style type="text/css">
+	#be-it-sidetab {
+		z-index: 999999;
+		background: #<?php echo $WPlize->get_option('bgcolor'); ?>;
+		padding: 0 5px;
+	}      
+	
+	#be-it-sidetab .side-tab-bg-box {
+	  	padding: 5px 5px 10px 5px;
+	}
+	
+	#be-it-sidetab .fb-like-box {
+	    background: #<?php echo $fb_bg_color; ?>;
+	  	width: <?php echo $WPlize->get_option('fb_width'); ?>px;
+	  	height: <?php echo $WPlize->get_option('fb_height'); ?>px;	
+	  	overflow: hidden;       
+	} 
+</style>
 
 <div id="be-it-sidetab">
 			<div class="side-tab-bg-box">
