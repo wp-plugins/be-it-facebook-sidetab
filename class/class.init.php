@@ -30,19 +30,7 @@ class be_it_sidetab_init
    if (is_admin()) {
     wp_enqueue_style( 'beit-sidetab-style', BE_SIDETAB_URL . '/css/admin-style.css', array(), '1.0', 'screen' );
    } else {
-	  //wp_enqueue_style( 'beit-sidetab-style', BE_SIDETAB_URL . 'css/style.php', array(), '1.0', 'screen' ); 
-	  // Get option
-	  $WPlize = new WPlize(BE_SIDETAB_OPTION);
-	  
-	  if($WPlize->get_option('fb_color_scheme')=='dark'){
- 	 		$fb_bg_color = '000';
- 	 	} else {
-	 	 	$fb_bg_color = 'FFF';
- 	 	}
-	  
-	  $url = BE_SIDETAB_URL . 'css/style.php?bgcolor='. $WPlize->get_option('bgcolor') .'&width='. $WPlize->get_option('fb_width') .'&height='. $WPlize->get_option('fb_height') .'&fb_bgcolor='. $fb_bg_color;
-	  
-	  echo "<link type='text/css' rel='stylesheet' href='$url' media='screen' />";
+    // NOTHING
    }
 	}
 	
