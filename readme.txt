@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: facebook, slide, tabs, like box
 Requires at least: 2.7
 Tested up to: 3.3.1
-Stable tag: 2.0.1
+Stable tag: 2.1.0
 
 Be-It Facebook Like Box side tab is a sliding and floating tab on left or right screen that has multiply options for viewing. 
 
@@ -41,6 +41,11 @@ Please send to support(at)be-it.se
 2. screenshot-3.png
 
 == Changelog ==
+
+= 2.1.0 =
+* Added mobile detection support
+* Added turn on/off for mobile devices
+* Bug fix float right/left problem
 
 = 2.0.1 =
 * Bug fix class.init problem 

@@ -10,11 +10,12 @@ function display_sidetab_settings() {
 	// Save admin settings
 	if (isset($_POST["update_settings"])) {  
 
-		/*
+/*
 		echo "<pre>";
  	 		print_r($_POST);
- 	 	echo "</pre>"; 
- 	 	*/
+ 	 	echo "</pre>"
+*/; 
+ 	 	
  
  	 	if($WPlize->get_option('location')==TRUE) {
  	 		
@@ -46,6 +47,7 @@ function display_sidetab_settings() {
 										'fb_border_color' => esc_attr($_POST['fb_border_color']),
 										'fb_color_scheme' => esc_attr($_POST['fb_color_scheme']),
 										'bgcolor' => esc_attr($_POST['bgcolor']),
+										'show_on_mobile' => esc_attr($_POST['show_on_mobile']),
 										'uninstall_all' => 'true'
 									));											
 	
@@ -178,10 +180,10 @@ function display_sidetab_settings() {
       <td>
       		<p class="field switch">
       			<?php $location = $WPlize->get_option('location'); ?>
-    				<input type="radio" id="radio7" name="location" value="left" <?php if($location=='left') echo 'checked'; ?> />
-    				<input type="radio" id="radio8" name="location" value="right" <?php if($location=='right') echo 'checked'; ?> />
-    				<label for="radio7" class="cb-enable <?php if($location=='left') echo 'selected'; ?>"><span><?php _e('Left', 'beit-sidetab') ?></span></label>
-    				<label for="radio8" class="cb-disable <?php if($location=='right') echo 'selected'; ?>"><span><?php _e('Right', 'beit-sidetab') ?></span></label>
+    				<input type="radio" id="radio13" name="location" value="left" <?php if($location=='left') echo 'checked'; ?> />
+    				<input type="radio" id="radio14" name="location" value="right" <?php if($location=='right') echo 'checked'; ?> />
+    				<label for="radio13" class="cb-enable <?php if($location=='left') echo 'selected'; ?>"><span><?php _e('Left', 'beit-sidetab') ?></span></label>
+    				<label for="radio14" class="cb-disable <?php if($location=='right') echo 'selected'; ?>"><span><?php _e('Right', 'beit-sidetab') ?></span></label>
 					</p>
       </td>
     </tr> 
@@ -221,6 +223,21 @@ function display_sidetab_settings() {
 					</p>
       </td>
     </tr>
+    
+  	<tr valign="top">
+    	<th scope="row">
+      	<label for="url"><?php _e('Show on mobile devices', 'beit-sidetab') ?></label>
+      </th>
+      <td>
+      		<p class="field switch">
+      			<?php $show_on_mobile = $WPlize->get_option('show_on_mobile'); ?>
+    				<input type="radio" id="radio20" name="show_on_mobile" value="true" <?php if($show_on_mobile=='true') echo 'checked'; ?> />
+    				<input type="radio" id="radio21" name="show_on_mobile" value="false" <?php if($show_on_mobile=='false') echo 'checked'; ?> />
+    				<label for="radio20" class="cb-enable <?php if($show_on_mobile=='true') echo 'selected'; ?>"><span><?php _e('Yes', 'beit-sidetab') ?></span></label>
+    				<label for="radio21" class="cb-disable <?php if($show_on_mobile=='false') echo 'selected'; ?>"><span><?php _e('No', 'beit-sidetab') ?></span></label>
+					</p>
+      </td>
+    </tr>      
     
   	<tr valign="top">
     	<th scope="row">

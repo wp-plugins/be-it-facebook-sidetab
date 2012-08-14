@@ -24,6 +24,7 @@ class be_it_sidetab_setup
 										'fb_border_color' => '',
 										'fb_color_scheme' => 'light',
 										'bgcolor' => '3b62a7',
+										'show_on_mobile' => 'false',
 										'uninstall_all' => 'true'													
 										);
 
