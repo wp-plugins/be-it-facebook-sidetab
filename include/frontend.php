@@ -46,10 +46,10 @@ function beit_sidetab_frontend_footer() {
 <script type="text/javascript">
 jQuery(function(){
   	jQuery('#be-it-sidetab').tabSlideOut({
-       tabHandle: '.side-tab-clickme',           														//class of the element that will become your tab
-       pathToTabImage: '<?php echo $WPlize->get_option('img'); ?>', 				//path to the image for the tab 
-       imageHeight: '<?php echo $img_height; ?>px',  												//height of tab image           
-       imageWidth: '<?php echo $img_width; ?>px',   												//width of tab image     
+       tabHandle: '.side-tab-clickme',           								//class of the element that will become your tab
+       pathToTabImage: '<?php echo $WPlize->get_option('img'); ?>', 			//path to the image for the tab 
+       imageHeight: '<?php echo $img_height; ?>px',  							//height of tab image           
+       imageWidth: '<?php echo $img_width; ?>px',   							//width of tab image     
        tabLocation: '<?php echo $WPlize->get_option('location'); ?>',  			//side of screen where tab lives, top, right, bottom, or left
        speed: <?php echo $WPlize->get_option('speed'); ?>,             			//speed of animation
        action: '<?php echo $WPlize->get_option('action'); ?>',         			//options: 'click' or 'hover', action to trigger animation

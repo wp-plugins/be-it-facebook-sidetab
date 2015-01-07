@@ -9,13 +9,6 @@ function display_sidetab_settings() {
 
 	// Save admin settings
 	if (isset($_POST["update_settings"])) {  
-
-/*
-		echo "<pre>";
- 	 		print_r($_POST);
- 	 	echo "</pre>"
-*/; 
- 	 	
  
  	 	if($WPlize->get_option('location')==TRUE) {
  	 		
