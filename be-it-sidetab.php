@@ -3,7 +3,7 @@
 Plugin Name: Be-It Facebook SideTab
 Plugin URI: http://wordpress.org/extend/plugins/be-it-facebook-sidetab/
 Description: Be-It Facebook Like Box side tab is a sliding and floating tab on left or right screen that has multiply options for viewing.
-Version: 2.1.0
+Version: 2.2
 Author: Be-It Consulting
 Author URI: http://www.be-it.se/
 

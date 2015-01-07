@@ -5,7 +5,7 @@ class be_it_sidetab_init
 	** Initiation Language
 	** @return void
 	*/
-	function language() {
+	public static function language() {
   	load_plugin_textdomain('beit-sidetab-language', false, BE_SIDETAB_BASE . '/languages' );
   }
 
@@ -15,7 +15,7 @@ class be_it_sidetab_init
 	** Initiation menu
 	** @return void
 	*/
-	function menu(){
+	public static function menu(){
 		
 		add_options_page(__('Be-It FB Sidetab', 'beit-sidetab'),__('Be-It Sidetab', 'beit-sidetab'), 'edit_pages', 'beit_sidetab', 'display_sidetab_settings');     
 	
@@ -25,7 +25,7 @@ class be_it_sidetab_init
 	** Initiation style
 	** @return void
 	*/
-	function css()
+	public static function css()
 	{
    if (is_admin()) {
     wp_enqueue_style( 'beit-sidetab-style', BE_SIDETAB_URL . '/css/admin-style.css', array(), '1.0', 'screen' );
@@ -38,7 +38,7 @@ class be_it_sidetab_init
 	** Initiation JS
 	** @return void
 	*/
-	function js()
+	public static function js()
 	{
    	wp_enqueue_script('jquery');
    

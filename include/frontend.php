@@ -5,6 +5,9 @@ function beit_sidetab_frontend_head() {
  // Get options
  $WPlize = new WPlize(BE_SIDETAB_OPTION);
 
+ $app_id = $WPlize->get_option('fb_app_id');
+ $app_id = !empty( $app_id ) ? $app_id : 151720698324016;
+
  /**
  * Add Facebook javascripts
  */
@@ -13,10 +16,11 @@ function beit_sidetab_frontend_head() {
 			var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementById(id)) return;
 			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId='. $WPlize->get_option('fb_app_id') .'";
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId='. $app_id .'&version=v2.0";
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, \'script\', \'facebook-jssdk\'));</script>';
 }
+
 
 
 // Add frontend footer
