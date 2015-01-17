@@ -21,7 +21,7 @@ class be_it_sidetab_functions
 	/*
 	** Not installed
 	*/
-	function not_installed(){
+	public static function not_installed(){
     global $pagenow;
     if ( $pagenow == 'plugins.php' || $_SERVER['QUERY_STRING'] == 'page=beit_sidetab') {
       
